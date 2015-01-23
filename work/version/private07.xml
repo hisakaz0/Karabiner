@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>HHKB keybind</name>
+		<identifier>private	hhkb.keybind</identifier>
+		<item>
+			<name>HHKB HOME Key</name>
+			<appendix>fn + k is Home</appendix>
+			<identifier>private.fn_j_to_home</identifier>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::K,
+				ModifierFlag::FN,
+				KeyCode::HOME
+			</autogen>
+		</item>
+
+		<item>
+			<name>HHKB END Key</name>
+			<appendix>fn + , is End</appendix>
+			<identifier>private.fn_,_to_end</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::COMMA,
+				ModifierFlag::FN,
+				KeyCode::END
+			</autogen>
+		</item>
+
+		<item>
+			<name>HHKB PAGEUP Key</name>
+			<appendix>fn + l is PageUp</appendix>
+			<identifier>private.fn_l_to_pgup</identifier>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::L,
+				ModifierFlag::FN,
+				KeyCode::PAGEUP
+			</autogen>
+		</item>
+
+		<item>
+			<name>HHKB PAGEDOWN Key</name>
+			<appendix>fn + . is PageDown</appendix>
+			<identifier>private.fn_._to_pgdown</identifier>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::DOT,
+				ModifierFlag::FN,
+				KeyCode::PAGEDOWN
+			</autogen>
+		</item
+		>
+
+		<item>
+			<name>HHKB UP Arrow</name>
+			<identifier>private.fn_[_to_up</identifier>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::BRACKET_LEFT,
+				ModifierFlag::FN,
+				KeyCode::CURSOR_UP
+			</autogen>
+		</item>
+
+		<item>
+			<name>HHKB DOWN Arrow</name>
+			<appendix>fn + / is Down Arrow</appendix>
+			<identifier>private.fn_/_to_down</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::SLASH,
+				ModifierFlag::FN,
+				KeyCode::CURSOR_DOWN
+			</autogen>
+		</item>
+
+		<item>
+			<name>HHKB LEFT Arrow</name>
+			<appendix>fn + ; is Left Arrow</appendix>
+			<identifier>private.fn_;_to_left</identifier>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::SEMICOLON,
+				ModifierFlag::FN,
+				KeyCode::CURSOR_LEFT
+			</autogen>
+		</item>
+
+		<item>
+			<name>HHKB RIGHT Arrow</name>
+			<appendix>fn + ' is Right Arrow</appendix>
+			<identifier>private.fn_'_to_right</identifier>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::QUOTE,
+				ModifierFlag::FN,
+				KeyCode::CURSOR_RIGHT
+			</autogen>
+		</item>
+
+		<item>
+			<name>CAPS LOCK TO FN</name>
+			<appendix>ctrl is fn</appendix>
+			<identifier>private.capslock_to_fn</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::CAPSLOCK,
+				ModifierFlag::CAPSLOCK | ModifierFlag::NONE,
+				KeyCode::FN
+			</autogen>
+		</item>
+
+		<item>
+			<name>HHKB CAPSLOCK</name>
+			<appendix>fn + tab is CAPSLOCK</appendix>
+			<identifier>private.fn_tab_to_capslock</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::TAB,
+				ModifierFlag::FN,
+				KeyCode::CAPSLOCK
+			</autogen>
+		</item>
+	</item>
+
+	<!-- <item>                      -->
+		<!-- 	<name>HHKB DELETE</name>   -->
+		<!-- 	<appendix>                 -->
+			<!-- 		swap delete and backslash -->
+			<!-- 		(swap fn                  -->
+
+
+			<item>
+				<name>Exchange to Chrome Kyebind for Linux</name>
+				<identifier>private.chrome.keybind.for.linux</identifier>
+				<only>Chrome</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::K, ModifierFlag::COMMAND_L,
+					KeyCode::F, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_R
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::H, ModifierFlag::COMMAND_L,
+					KeyCode::Y, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<appdef>
+				<appname>Chrome</appname>
+				<equal>com.google.Chrome</equal>
+			</appdef>
+
+		</root>

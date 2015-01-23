@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<root>
+
+
+
+
+
+	<appdef>
+		<appname>Finder</appname>
+		<equal>com.apple.finder</equal>
+	</appdef>
+
+	<appdef>
+		<appname>Chrome</appname>
+		<equal>com.google.Chrome</equal>
+	</appdef>
+
+	<appdef>
+		<appname>iTerm2</appname>
+		<equal>com.googlecode.iterm2</equal>
+	</appdef>
+
+
+	<vkchangeinputsourcedef>
+		<name>KeyCode::VK_CHANGE_INPUTSOURCE_US</name>
+		<inputsourceid_equal>com.apple.keylayout.US</inputsourceid_equal>
+	</vkchangeinputsourcedef>
+
+	<vkchangeinputsourcedef>
+		<name>KeyCode::VK_CHANGE_INPUTSOURCE_GOOGLE_JAPANESE_INPUT</name>
+		<inputsourceid_equal>com.google.inputmethod.Japanese.base</inputsourceid_equal>
+	</vkchangeinputsourcedef>
+
+	<inputsourcedef>
+		<name>GOOGLE_JAPANESE_INPUT</name>
+		<inputsourceid_prefix>com.google.inputmethod.Japanese.base</inputsourceid_prefix>
+	</inputsourcedef>
+
+
+
+
+
+	<item>
+		<name>Private</name>
+		<item>
+			<name>HHKB Keybind</name>
+			<item>
+				<name>HHKB HOME Key</name>
+				<appendix>fn + k is Home</appendix>
+				<identifier>private.fn_j_to_home</identifier>
+				<autogen>
+					__KeyToKey__ 
+					KeyCode::K,
+					ModifierFlag::FN,
+					KeyCode::HOME
+				</autogen>
+			</item>
+
+			<item>
+				<name>HHKB END Key</name>
+				<appendix>fn + , is End</appendix>
+				<identifier>private.fn_,_to_end</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::COMMA,
+					ModifierFlag::FN,
+					KeyCode::END
+				</autogen>
+			</item>
+
+			<item>
+				<name>HHKB PAGEUP Key</name>
+				<appendix>fn + l is PageUp</appendix>
+				<identifier>private.fn_l_to_pgup</identifier>
+				<autogen>
+					__KeyToKey__ 
+					KeyCode::L,
+					ModifierFlag::FN,
+					KeyCode::PAGEUP
+				</autogen>
+			</item>
+
+			<item>
+				<name>HHKB PAGEDOWN Key</name>
+				<appendix>fn + . is PageDown</appendix>
+				<identifier>private.fn_._to_pgdown</identifier>
+				<autogen>
+					__KeyToKey__ 
+					KeyCode::DOT,
+					ModifierFlag::FN,
+					KeyCode::PAGEDOWN
+				</autogen>
+			</item
+			>
+
+			<item>
+				<name>HHKB UP Arrow</name>
+				<appendix>fn + ; is Up Arrow</appendix>
+				<identifier>private.fn_[_to_up</identifier>
+				<autogen>
+					__KeyToKey__ 
+					KeyCode::BRACKET_LEFT,
+					ModifierFlag::FN,
+					KeyCode::CURSOR_UP
+				</autogen>
+			</item>
+
+			<item>
+				<name>HHKB DOWN Arrow</name>
+				<appendix>fn + / is Down Arrow</appendix>
+				<identifier>private.fn_/_to_down</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::SLASH,
+					ModifierFlag::FN,
+					KeyCode::CURSOR_DOWN
+				</autogen>
+			</item>
+
+			<item>
+				<name>HHKB LEFT Arrow</name>
+				<appendix>fn + ; is Left Arrow</appendix>
+				<identifier>private.fn_;_to_left</identifier>
+				<autogen>
+					__KeyToKey__ 
+					KeyCode::SEMICOLON,
+					ModifierFlag::FN,
+					KeyCode::CURSOR_LEFT
+				</autogen>
+			</item>
+
+			<item>
+				<name>HHKB RIGHT Arrow</name>
+				<appendix>fn + ' is Right Arrow</appendix>
+				<identifier>private.fn_'_to_right</identifier>
+				<autogen>
+					__KeyToKey__ 
+					KeyCode::QUOTE,
+					ModifierFlag::FN,
+					KeyCode::CURSOR_RIGHT
+				</autogen>
+			</item>
+
+			<item>
+				<name>HHKB CAPSLOCK</name>
+				<appendix>fn + tab is CAPSLOCK</appendix>
+				<identifier>private.fn_tab_to_capslock</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::TAB,
+					ModifierFlag::FN,
+					KeyCode::CAPSLOCK
+				</autogen>
+			</item>
+
+			<item>
+				<name>CAPS LOCK TO FN</name>
+				<appendix>ctrl is fn.</appendix>
+				<appendix>duplicate fn key</appendix>
+				<identifier>private.capslock_to_fn</identifier>
+				<autogen>
+					__KeyToKey__
+					KeyCode::CAPSLOCK,
+					ModifierFlag::CAPSLOCK | ModifierFlag::NONE,
+					KeyCode::FN
+				</autogen>
+			</item>
+		</item>
+
+
+		<item>
+			<name>Chrome for Linux and Windows</name>
+			<item>
+				<name>Web Search</name>
+				<appendix>command + k is option + command + f</appendix>
+				<identifier>private.cmd.k.to.cmt.cmd.opt.l</identifier>
+				<only>Chrome</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::K, ModifierFlag::COMMAND_L,
+					KeyCode::F, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_R
+				</autogen>
+			</item>
+
+			<item>
+				<name>History</name>
+				<appendix>command + h is command + y</appendix>
+				<identifier>private.cmd.h.to.cmd.y</identifier>
+				<only>Chrome</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::H, ModifierFlag::COMMAND_L,
+					KeyCode::Y, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Downloads</name>
+				<appendix>command + j is command + shift + j</appendix>
+				<identifier>private.cmd.j.to.cmd.shift.j</identifier>
+				<only>Chrome</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::J, ModifierFlag::COMMAND_L,
+					KeyCode::J, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+				</autogen>
+			</item>
+
+
+		</item>
+
+		<item>
+			<name>Terminal(iTerm2)</name>
+			<item>
+				<name>Swap Command + tab to Control + tab</name>
+				<identifier>private.cmd.tab.to.ctrl.space</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::TAB, ModifierFlag::CONTROL_L,
+					KeyCode::TAB, ModifierFlag::COMMAND_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::TAB, ModifierFlag::COMMAND_L,
+					KeyCode::TAB, ModifierFlag::CONTROL_L
+				</autogen>
+			</item>
+			<item>
+				<name>Swap Command + space to Control + space</name>
+				<identifier>private.cmd.space.to.ctrl.space</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::SPACE, ModifierFlag::CONTROL_L,
+					KeyCode::SPACE, ModifierFlag::COMMAND_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::SPACE, ModifierFlag::COMMAND_L,
+					KeyCode::SPACE, ModifierFlag::CONTROL_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + C and CMD + C</name>
+				<identifier>private.swap.ctrl.c.to.cmd.c</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::C, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::C, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::C, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::C, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + V and CMD + V</name>
+				<identifier>private.swap.ctrl.v.to.cmd.v</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::V, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::V, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::V, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::V, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + S and CMD + S</name>
+				<identifier>private.swap.ctrl.s.to.cmd.s</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::S, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::S, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::S, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::S, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + D and CMD + D</name>
+				<identifier>private.swap.ctrl.d.to.cmd.d</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::D, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::D, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::D, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::D, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + N and CMD + N</name>
+				<identifier>private.swap.ctrl.n.to.cmd.n</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::N, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::N, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::N, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::N, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + R and CMD + R</name>
+				<identifier>private.swap.ctrl.r.to.cmd.r</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::R, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::R, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::R, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::R, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + A and CMD + A</name>
+				<identifier>private.swap.ctrl.a.to.cmd.a</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::A, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::A, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::A, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::A, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + X and CMD + X</name>
+				<identifier>private.swap.ctrl.x.to.cmd.x</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::X, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::X, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::X, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::X, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Swap Ctrl + K and CMD + K</name>
+				<identifier>private.swap.ctrl.k.to.cmd.k</identifier>
+				<only>iTerm2</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::K, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+					KeyCode::K, ModifierFlag::CONTROL_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::K, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+					KeyCode::K, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+		</item>
+
+		<item>
+			<name>Finder</name>
+			<item>
+				<name>Go Back</name>
+				<appendix>opt + h is cmd + [</appendix>
+				<identifier>private.opt.h.to.cmd.[</identifier>
+				<only>Finder</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::H, ModifierFlag::OPTION_L,
+					KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Go Forward</name>
+				<appendix>opt + l is cmd + ]</appendix>
+				<identifier>private.opt.l.to.cmd.]</identifier>
+				<only>Finder</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::L, ModifierFlag::OPTION_L,
+					KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
+				</autogen>
+			</item>
+
+			<item>
+				<name>Up Arrow</name>
+				<appendix>opt + k is Up arrow</appendix>
+				<identifier>private.opt.k.to.up.arrow</identifier>
+				<only>Finder</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::K, ModifierFlag::OPTION_L,
+					KeyCode::CURSOR_UP
+				</autogen>
+			</item>
+
+			<item>
+				<name>Down Arrow</name>
+				<appendix>opt + j is Down arrow</appendix>
+				<identifier>private.opt.j.to.down.arrow</identifier>
+				<only>Finder</only>
+				<autogen>
+					__KeyToKey__
+					KeyCode::J, ModifierFlag::OPTION_L,
+					KeyCode::CURSOR_DOWN
+				</autogen>
+			</item>
+
+		</item>
+
+		<item>
+			<name>Global Settion</name>
+			<item>
+				<name>Swap Delete and Backslash</name>
+				<identifier>private.swap.delete.and.backslash</identifier>
+				<appendix>All modifier action is enabled</appendix>
+				<autogen>
+					__KeyToKey__
+					KeyCode::DELETE, KeyCode::BACKSLASH
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::BACKSLASH, KeyCode::DELETE
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::DELETE, ModifierFlag::SHIFT_R,
+					KeyCode::BACKSLASH, ModifierFlag::SHIFT_R
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::BACKSLASH, ModifierFlag::SHIFT_R,
+					KeyCode::FORWARD_DELETE
+					<!-- KeyCode::DELETE, ModifierFlag::FN -->
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::DELETE, ModifierFlag::SHIFT_L,
+					KeyCode::BACKSLASH, ModifierFlag::SHIFT_L
+				</autogen>
+				<autogen>
+					__KeyToKey__
+					KeyCode::BACKSLASH, ModifierFlag::SHIFT_L,
+					KeyCode::FORWARD_DELETE
+					<!-- KeyCode::DELETE, ModifierFlag::FN -->
+				</autogen>
+			</item>
+
+			<item>
+				<name>Smart Escape on VIM</name>
+				<identifier>private.smart.escape.on.vim</identifier>
+				<appendix>Change to English IME if Japanese IME is selected in any applications</appendix>
+				<inputsource_only>GOOGLE_JAPANESE_INPUT</inputsource_only>
+				<autogen>
+					__KeyToKey__ 
+					KeyCode::ESCAPE,
+					KeyCode::ESCAPE,
+					KeyCode::SPACE, ModifierFlag::COMMAND_L</autogen>
+					<!-- KeyCode::VK_CHANGE_INPUTSOURCE_US</autogen> -->
+			</item>
+		</item>
+	</item>
+
+</root>
