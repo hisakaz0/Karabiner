@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<root>
+
+	<appdef>
+		<appname>Finder</appname>
+		<equal>com.apple.finder</equal>
+	</appdef>
+
+	<appdef>
+		<appname>Chrome</appname>
+		<equal>com.google.Chrome</equal>
+	</appdef>
+
+	<appdef>
+		<appname>iTerm2</appname>
+		<equal>com.googlecode.iterm2</equal>
+	</appdef>
+
+
+	<vkchangeinputsourcedef>
+		<name>KeyCode::VK_CHANGE_INPUTSOURCE_US</name>
+		<inputsourceid_equal>com.apple.keylayout.US</inputsourceid_equal>
+	</vkchangeinputsourcedef>
+
+	<vkchangeinputsourcedef>
+		<name>KeyCode::VK_CHANGE_INPUTSOURCE_GOOGLE_JAPANESE_INPUT</name>
+		<inputsourceid_equal>com.google.inputmethod.Japanese.base</inputsourceid_equal>
+	</vkchangeinputsourcedef>
+
+	<inputsourcedef>
+		<name>GOOGLE_JAPANESE_INPUT</name>
+		<inputsourceid_prefix>com.google.inputmethod.Japanese.base</inputsourceid_prefix>
+	</inputsourcedef>
+
+</root>
+
+
