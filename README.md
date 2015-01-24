@@ -5,8 +5,8 @@ Karabiner
 
 Launch a terminal application.
 
-1. `mv ~/Library/Application Support/Karabiner .`
-2. `git clone https://github.com/pinkienort/Karabiner.git`
+1. `mv ~/Library/Application Support/Karabiner'
+2. `git clone https://github.com/pinkienort/Karabiner.git .`
 
 Launch the Karabiner application.
 
