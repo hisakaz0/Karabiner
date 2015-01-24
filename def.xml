@@ -16,21 +16,60 @@
 		<equal>com.googlecode.iterm2</equal>
 	</appdef>
 
+	<appdef>
+		<appname>Finder</appname>
+		<equal>com.apple.finder</equal>
+	</appdef>
 
-	<vkchangeinputsourcedef>
-		<name>KeyCode::VK_CHANGE_INPUTSOURCE_US</name>
-		<inputsourceid_equal>com.apple.keylayout.US</inputsourceid_equal>
-	</vkchangeinputsourcedef>
-
-	<vkchangeinputsourcedef>
-		<name>KeyCode::VK_CHANGE_INPUTSOURCE_GOOGLE_JAPANESE_INPUT</name>
-		<inputsourceid_equal>com.google.inputmethod.Japanese.base</inputsourceid_equal>
-	</vkchangeinputsourcedef>
 
 	<inputsourcedef>
 		<name>GOOGLE_JAPANESE_INPUT</name>
 		<inputsourceid_prefix>com.google.inputmethod.Japanese.base</inputsourceid_prefix>
 	</inputsourcedef>
+
+	<vkchangeinputsourcedef>
+		<name>KeyCode::VK_CHANGE_INPUTSOURCE_GOOGLE_JAPANESE_INPUT</name>
+		<inputsourceid_equal>com.google.inputmethod.Japanese.base</inputsourceid_equal>
+	</vkchangeinputsourcedef>
+	
+	<vkchangeinputsourcedef>
+		<name>KeyCode::VK_CHANGE_INPUTSOURCE_US</name>
+		<inputsourceid_equal>com.apple.keylayout.US</inputsourceid_equal>
+	</vkchangeinputsourcedef>
+
+
+
+
+	<vkopenurldef>
+		<name>KeyCode::VK_OPEN_URL_APP_Chrome</name>
+		<url type="file">/Applications/Google Chrome.app</url>
+	</vkopenurldef>
+
+	<vkopenurldef>
+		<name>KeyCode::VK_OPEN_URL_APP_Yorufukurou</name>
+		<url type="file">/Applications/YoruFukurou.app</url>
+	</vkopenurldef>
+	
+	<vkopenurldef>
+		<name>KeyCode::VK_OPEN_URL_APP_Finder</name>
+		<url type="file">/System/Library/CoreServices/Finder.app</url>
+	</vkopenurldef>
+
+	<vkopenurldef>
+		<name>KeyCode::VK_OPEN_URL_APP_iTerm</name>
+		<url type="file">/Applications/iTerm.app</url>
+	</vkopenurldef>
+
+
+
+	<!-- shell commands -->
+	<vkopenurldef>
+		<name>KeyCode::VK_OPEN_URL_SHELL_screencapture</name>
+		<url type="shell">
+			<![CDATA[ /Users/hisakazu/bin/sh/screencapture.sh ]]>
+		</url>
+	</vkopenurldef>
+
 
 </root>
 

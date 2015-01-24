@@ -83,17 +83,39 @@
 		</item>
 
 		<item>
-			<name>Smart Escape for iTerm2</name>
-			<identifier>private.smart.escape.for.iterm2</identifier>
-			<inputsource_only>GOOGLE_JAPANESE_INPUT</inputsource_only>
-			<only>iTerm2</only>
+			<name>Switch Window</name>
+			<identifier>private.switch.windows</identifier>
 			<autogen>
-				__KeyToKey__ 
-				KeyCode::ESCAPE,
-				KeyCode::ESCAPE, KeyCode::SPACE, ModifierFlag::CONTROL_L, KeyCode::ESCAPE
+				__KeyToKey__
+				KeyCode::SEMICOLON, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+			</autogen>
+			<autogen>
+				__KeyToKey__
+				KeyCode::QUOTE, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
 			</autogen>
 		</item>
-		
-	</item>
 
+		<item>
+			<name>Media Control</name>
+			<identifier>private.media.control</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::COMMA, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::F7, ModifierFlag::FN
+			</autogen>
+			<autogen>
+				__KeyToKey__
+				KeyCode::P, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::F8, ModifierFlag::FN | ModifierFlag::NONE
+			</autogen>
+			<autogen>
+				__KeyToKey__
+				KeyCode::DOT, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::F9, ModifierFlag::FN | ModifierFlag::NONE
+			</autogen>
+		</item>
+
+	</item>
 </root>

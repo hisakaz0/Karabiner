@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <root>
 	<item>
-		<name>Chrome for Linux and Windows</name>
+		<name>Chrome</name>
+
 		<item>
 			<name>Web Search</name>
-			<appendix>command + k is option + command + f</appendix>
-			<identifier>private.cmd.k.to.cmt.cmd.opt.l</identifier>
 			<only>Chrome</only>
 			<autogen>
 				__KeyToKey__
@@ -16,8 +15,6 @@
 
 		<item>
 			<name>History</name>
-			<appendix>command + h is command + y</appendix>
-			<identifier>private.cmd.h.to.cmd.y</identifier>
 			<only>Chrome</only>
 			<autogen>
 				__KeyToKey__
@@ -28,8 +25,6 @@
 
 		<item>
 			<name>Downloads</name>
-			<appendix>command + j is command + shift + j</appendix>
-			<identifier>private.cmd.j.to.cmd.shift.j</identifier>
 			<only>Chrome</only>
 			<autogen>
 				__KeyToKey__
@@ -37,5 +32,17 @@
 				KeyCode::J, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
 			</autogen>
 		</item>
+
+		<item>
+			<name>Open Link</name>
+			<only>Chrome</only>
+			<autogen>
+				__KeyToKey__
+				KeyCode::L, ModifierFlag::COMMAND_L,
+				KeyCode::L, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+			</autogen>
+		</item>
+
 	</item>
 </root>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>Open Apps/URL/SHELLSCRIPT</name>
+
+		<item>
+			<name>Screencapture</name>
+			<identifier>private.screencapture.without.iterm</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::I, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::VK_OPEN_URL_SHELL_screencapture
+			</autogen>
+		</item>
+		
+		<item>
+			<name>Open Chrome.app</name>
+			<identifier>private.open.chrome.app</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::C, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::VK_OPEN_URL_APP_Chrome
+			</autogen>
+		</item>
+		
+		<item>
+			<name>Open Yorufukurou.app</name>
+			<identifier>private.open.yorufukurou.app</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::Y, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::VK_OPEN_URL_APP_Yorufukurou
+			</autogen>
+		</item>
+		
+		<item>
+			<name>Open iTerm.app</name>
+			<identifier>private.open.iterm.app</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::T, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::VK_OPEN_URL_APP_iTerm
+			</autogen>
+		</item>
+		
+		<item>
+			<name>Open Finder.app</name>
+			<identifier>private.open.finder.app</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::F, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+				KeyCode::VK_OPEN_URL_APP_Finder
+			</autogen>
+		</item>
+		
+	</item>
+</root>

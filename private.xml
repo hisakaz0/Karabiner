@@ -3,10 +3,11 @@
 	<item>
 		<name>Private</name>
 		<include path='./def.xml'/>
+		<include path='./chrome.xml'/>
 		<include path='./iterm.xml'/>
 		<include path='./hhkb.xml'/>
 		<include path='./global.xml'/>
-		<!-- <include path='./finder.xml'/> -->
-		<!-- <include path='./chrome.xml'/> -->
+		<include path='./finder.xml'/>
+		<include path='./open.xml'/>
 	</item>
 </root>

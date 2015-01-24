@@ -4,7 +4,6 @@
 		<name>HHKB Keybind</name>
 		<item>
 			<name>HHKB HOME Key</name>
-			<appendix>fn + k is Home</appendix>
 			<identifier>private.fn_j_to_home</identifier>
 			<autogen>
 				__KeyToKey__ 
@@ -16,7 +15,6 @@
 
 		<item>
 			<name>HHKB END Key</name>
-			<appendix>fn + , is End</appendix>
 			<identifier>private.fn_,_to_end</identifier>
 			<autogen>
 				__KeyToKey__
@@ -28,7 +26,6 @@
 
 		<item>
 			<name>HHKB PAGEUP Key</name>
-			<appendix>fn + l is PageUp</appendix>
 			<identifier>private.fn_l_to_pgup</identifier>
 			<autogen>
 				__KeyToKey__ 
@@ -40,7 +37,6 @@
 
 		<item>
 			<name>HHKB PAGEDOWN Key</name>
-			<appendix>fn + . is PageDown</appendix>
 			<identifier>private.fn_._to_pgdown</identifier>
 			<autogen>
 				__KeyToKey__ 
@@ -52,7 +48,6 @@
 
 		<item>
 			<name>HHKB UP Arrow</name>
-			<appendix>fn + ; is Up Arrow</appendix>
 			<identifier>private.fn_[_to_up</identifier>
 			<autogen>
 				__KeyToKey__ 
@@ -64,7 +59,6 @@
 
 		<item>
 			<name>HHKB DOWN Arrow</name>
-			<appendix>fn + / is Down Arrow</appendix>
 			<identifier>private.fn_/_to_down</identifier>
 			<autogen>
 				__KeyToKey__
@@ -76,7 +70,6 @@
 
 		<item>
 			<name>HHKB LEFT Arrow</name>
-			<appendix>fn + ; is Left Arrow</appendix>
 			<identifier>private.fn_;_to_left</identifier>
 			<autogen>
 				__KeyToKey__ 
@@ -88,7 +81,6 @@
 
 		<item>
 			<name>HHKB RIGHT Arrow</name>
-			<appendix>fn + ' is Right Arrow</appendix>
 			<identifier>private.fn_'_to_right</identifier>
 			<autogen>
 				__KeyToKey__ 
@@ -100,7 +92,6 @@
 
 		<item>
 			<name>HHKB CAPSLOCK</name>
-			<appendix>fn + tab is CAPSLOCK</appendix>
 			<identifier>private.fn_tab_to_capslock</identifier>
 			<autogen>
 				__KeyToKey__
@@ -112,8 +103,6 @@
 
 		<item>
 			<name>CAPS LOCK TO FN</name>
-			<appendix>ctrl is fn.</appendix>
-			<appendix>duplicate fn key</appendix>
 			<identifier>private.capslock_to_fn</identifier>
 			<autogen>
 				__KeyToKey__
@@ -122,61 +111,6 @@
 				KeyCode::FN
 			</autogen>
 		</item>
-	</item>
 
-
-	<item>
-		<name>Chrome for Linux and Windows</name>
-		<item>
-			<name>Web Search</name>
-			<appendix>command + k is option + command + f</appendix>
-			<identifier>private.cmd.k.to.cmt.cmd.opt.l</identifier>
-			<only>Chrome</only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::K, ModifierFlag::COMMAND_L,
-				KeyCode::F, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_R
-			</autogen>
-		</item>
-
-		<item>
-			<name>History</name>
-			<appendix>command + h is command + y</appendix>
-			<identifier>private.cmd.h.to.cmd.y</identifier>
-			<only>Chrome</only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::H, ModifierFlag::COMMAND_L,
-				KeyCode::Y, ModifierFlag::COMMAND_L
-			</autogen>
-		</item>
-
-		<item>
-			<name>Downloads</name>
-			<appendix>command + j is command + shift + j</appendix>
-			<identifier>private.cmd.j.to.cmd.shift.j</identifier>
-			<only>Chrome</only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::J, ModifierFlag::COMMAND_L,
-				KeyCode::J, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
-			</autogen>
-		</item>
-
-		<item>
-			<name>Swap Ctrl + K and CMD + K</name>
-			<identifier>private.swap.ctrl.k.to.cmd.k</identifier>
-			<only>iTerm2</only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::K, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
-				KeyCode::K, ModifierFlag::CONTROL_L
-			</autogen>
-			<autogen>
-				__KeyToKey__
-				KeyCode::K, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
-				KeyCode::K, ModifierFlag::COMMAND_L
-			</autogen>
-		</item>
 	</item>
 </root>
