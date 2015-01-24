@@ -1,6 +1,8 @@
 Karabiner
 ==============
 
+## INSTALL
+
 Launch a terminal application.
 
 1. `mv ~/Library/Application Support/Karabiner`
@@ -9,7 +11,7 @@ Launch a terminal application.
 Launch the Karabiner application.
 
 1. In 'Change Key' tab, click 'Reload XML'.
-2. There are 'private' menu.
+2. Then, there are 'Private' menu on the top.
 3. You check one you wanna use.
 
 
