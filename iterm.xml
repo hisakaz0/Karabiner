@@ -1,76 +1,86 @@
 <?xml version="1.0"?>
 <root>
-	<item>
-		<name>Terminal(iTerm2)</name>
-		<item>
-			<name>Swap Command + Space to Control + Space</name>
-			<identifier>private.swap.command.tab.to.control.space</identifier>
-			<only>iTerm2</only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::SPACE, ModifierFlag::COMMAND_L,
-				KeyCode::SPACE, ModifierFlag::CONTROL_L
-			</autogen>
-			<autogen>
-				__KeyToKey__
-				KeyCode::SPACE, ModifierFlag::CONTROL_L,
-				KeyCode::SPACE, ModifierFlag::COMMAND_L
-			</autogen>
-		</item>
+  <item>
+    <name>Terminal(iTerm2)</name>
+    <item>
+      <name>Swap Command + Space and Control + Space</name>
+      <identifier>private.swap.command.tab.to.control.space</identifier>
+      <only>iTerm2</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, ModifierFlag::COMMAND_L,
+        KeyCode::SPACE, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, ModifierFlag::CONTROL_L,
+        KeyCode::SPACE, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
 
-		<item>
-			<name>Swap Command + HHKB Right/Left and Control + HHKB Right/Left</name>
-			<identifier>private.swap.command.hhkb.right.left.and.control.hhkb.right.left</identifier>
-			<only>iTerm2</only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
-				KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
-			</autogen>
-			<autogen>
-				__KeyToKey__
-				KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L,
-				KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
-			</autogen>
-			<autogen>
-				__KeyToKey__
-				KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L,
-				KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
-			</autogen>
-			<autogen>
-				__KeyToKey__
-				KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L,
-				KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
-			</autogen>
-		</item>
+    <item>
+      <name>Swap Command + HHKB Right/Left and Control + HHKB Right/Left</name>
+      <identifier>private.swap.command.hhkb.right.left.and.control.hhkb.right.left</identifier>
+      <only>iTerm2</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, ModifierFlag::COMMAND_L | ModifierFlag::FN,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON, ModifierFlag::COMMAND_L | ModifierFlag::FN,
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
 
-		<item>
-			<name>Swap Opt + Command + 8 and Opt + Control + 8</name>
-			<identifier>private.swap.opt.command.8.and..opt.control.8</identifier>
-			<only>iTerm2</only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::KEY_8, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
-				KeyCode::KEY_8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L
-			</autogen>
-			<autogen>
-				__KeyToKey__
-				KeyCode::KEY_8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L,
-				KeyCode::KEY_8, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
-			</autogen>
-		</item>
+    <item>
+      <name>Swap Opt + Command + 8 and Control + Opt + 8</name>
+      <identifier>private.swap.opt.command.8.and..opt.control.8</identifier>
+      <only>iTerm2</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::KEY_8, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
+        KeyCode::KEY_8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::KEY_8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L,
+        KeyCode::KEY_8, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
+      </autogen>
+    </item>
 
-		<item>
-			<name>Smart Escape</name>
-			<identifier>private.smart.escape.for.iterm2</identifier>
-			<inputsource_only>GOOGLE_JAPANESE_INPUT</inputsource_only>
-			<only>iTerm2</only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::ESCAPE,
-				KeyCode::ESCAPE, KeyCode::SPACE, ModifierFlag::CONTROL_L, KeyCode::ESCAPE
-			</autogen>
-		</item>
+    <!-- <item>                                                                        -->
+    <!--   <name>Smart Escape</name>                                                   -->
+    <!--   <identifier>private.smart.escape.for.iterm2</identifier>                    -->
+    <!--   <inputsource_only>GOOGLE_JAPANESE_INPUT</inputsource_only>                  -->
+    <!--   <only>iTerm2</only>                                                         -->
+    <!--   <autogen>                                                                   -->
+    <!--     __KeyToKey__                                                              -->
+    <!--     KeyCode::ESCAPE,                                                          -->
+    <!--     KeyCode::ESCAPE, KeyCode::SPACE, ModifierFlag::CONTROL_L, KeyCode::ESCAPE -->
+    <!--   </autogen>                                                                  -->
+    <!-- </item>                                                                       -->
 
-	</item>
+    <item>
+      <name>Swap Command and Control</name>
+      <identifier>private.swap.Command.and.control</identifier>
+      <only>iTerm2</only>
+      <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+    </item>
+
+
+
+  </item>
 </root>

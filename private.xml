@@ -9,5 +9,6 @@
 		<include path='./global.xml'/>
 		<include path='./finder.xml'/>
 		<include path='./open.xml'/>
+		<include path='./windowSession.xml'/>
 	</item>
 </root>

@@ -5,6 +5,7 @@
 
 		<item>
 			<name>Web Search</name>
+			<identifier>private.chrome.web.search</identifier>
 			<only>Chrome</only>
 			<autogen>
 				__KeyToKey__
@@ -15,6 +16,7 @@
 
 		<item>
 			<name>History</name>
+			<identifier>private.chrome.history</identifier>
 			<only>Chrome</only>
 			<autogen>
 				__KeyToKey__
@@ -25,6 +27,7 @@
 
 		<item>
 			<name>Downloads</name>
+			<identifier>private.chrome.downloads</identifier>
 			<only>Chrome</only>
 			<autogen>
 				__KeyToKey__
@@ -35,6 +38,7 @@
 
 		<item>
 			<name>Open Link</name>
+			<identifier>private.chrome.open.link</identifier>
 			<only>Chrome</only>
 			<autogen>
 				__KeyToKey__

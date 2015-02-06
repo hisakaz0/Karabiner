@@ -6,7 +6,7 @@
 		<item>
 			<name>Swap Command+TAB and Control+TAB</name>
 			<identifier>private.swap.cmd.TAB.and.ctrl.TAB</identifier>
-			<not>iTerm2</not>
+			<!-- <not>iTerm2</not> -->
 			<include path="/Applications/Karabiner.app/Contents/Resources/include/checkbox/snippets/modifier_tab_to_command_tab.xml">
 				<replacementdef>
 					<replacementname>FROM_MODIFIER</replacementname>
@@ -74,7 +74,7 @@
 			<name>Smart Escape without iTerm2</name>
 			<identifier>private.smart.escape.without.iterm2</identifier>
 			<inputsource_only>GOOGLE_JAPANESE_INPUT</inputsource_only>
-			<not>iTerm2</not>
+			<!-- <not>iTerm2</not> -->
 			<autogen>
 				__KeyToKey__ 
 				KeyCode::ESCAPE,
@@ -94,6 +94,16 @@
 				__KeyToKey__
 				KeyCode::QUOTE, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
 				KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+			</autogen>
+		</item>
+
+		<item>
+			<name>Full screen</name>
+			<identifier>private.full.screen</identifier>
+			<autogen>
+				__KeyToKey__
+				KeyCode::RETURN, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+				KeyCode::F, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L
 			</autogen>
 		</item>
 

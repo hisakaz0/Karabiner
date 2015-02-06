@@ -6,7 +6,7 @@
 			<name>HHKB HOME Key</name>
 			<identifier>private.fn_j_to_home</identifier>
 			<autogen>
-				__KeyToKey__ 
+				__KeyToKey__
 				KeyCode::K,
 				ModifierFlag::FN,
 				KeyCode::HOME
@@ -28,7 +28,7 @@
 			<name>HHKB PAGEUP Key</name>
 			<identifier>private.fn_l_to_pgup</identifier>
 			<autogen>
-				__KeyToKey__ 
+				__KeyToKey__
 				KeyCode::L,
 				ModifierFlag::FN,
 				KeyCode::PAGEUP
@@ -39,18 +39,18 @@
 			<name>HHKB PAGEDOWN Key</name>
 			<identifier>private.fn_._to_pgdown</identifier>
 			<autogen>
-				__KeyToKey__ 
+				__KeyToKey__
 				KeyCode::DOT,
 				ModifierFlag::FN,
 				KeyCode::PAGEDOWN
 			</autogen>
 		</item>
 
-		<item>
+		"`<item>
 			<name>HHKB UP Arrow</name>
 			<identifier>private.fn_[_to_up</identifier>
 			<autogen>
-				__KeyToKey__ 
+				__KeyToKey__
 				KeyCode::BRACKET_LEFT,
 				ModifierFlag::FN,
 				KeyCode::CURSOR_UP
@@ -72,7 +72,7 @@
 			<name>HHKB LEFT Arrow</name>
 			<identifier>private.fn_;_to_left</identifier>
 			<autogen>
-				__KeyToKey__ 
+				__KeyToKey__
 				KeyCode::SEMICOLON,
 				ModifierFlag::FN,
 				KeyCode::CURSOR_LEFT
@@ -83,7 +83,7 @@
 			<name>HHKB RIGHT Arrow</name>
 			<identifier>private.fn_'_to_right</identifier>
 			<autogen>
-				__KeyToKey__ 
+				__KeyToKey__
 				KeyCode::QUOTE,
 				ModifierFlag::FN,
 				KeyCode::CURSOR_RIGHT
@@ -101,16 +101,17 @@
 			</autogen>
 		</item>
 
-		<item>
-			<name>CAPS LOCK TO FN</name>
-			<identifier>private.capslock_to_fn</identifier>
-			<autogen>
-				__KeyToKey__
-				KeyCode::CAPSLOCK,
-				ModifierFlag::CAPSLOCK | ModifierFlag::NONE,
-				KeyCode::FN
-			</autogen>
-		</item>
+    <!-- キーボードの左下のctrlはseilで変更してる -->
+		<!-- <item>                                           -->
+		<!-- 	<name>CAPS LOCK TO FN</name>                    -->
+		<!-- 	<identifier>private.capslock_to_fn</identifier> -->
+		<!-- 	<autogen>                                       -->
+		<!-- 		__KeyToKey__                                   -->
+		<!-- 		KeyCode::CAPSLOCK,                             -->
+		<!-- 		ModifierFlag::CAPSLOCK | ModifierFlag::NONE,   -->
+		<!-- 		KeyCode::FN                                    -->
+		<!-- 	</autogen>                                      -->
+		<!-- </item>                                          -->
 
 	</item>
 </root>

@@ -1,65 +1,67 @@
 <?xml version="1.0"?>
 <root>
 
+	<!-- app list -->
 	<appdef>
 		<appname>Finder</appname>
 		<equal>com.apple.finder</equal>
 	</appdef>
-
 	<appdef>
 		<appname>Chrome</appname>
 		<equal>com.google.Chrome</equal>
 	</appdef>
-
 	<appdef>
 		<appname>iTerm2</appname>
 		<equal>com.googlecode.iterm2</equal>
 	</appdef>
-
 	<appdef>
 		<appname>Finder</appname>
 		<equal>com.apple.finder</equal>
 	</appdef>
 
 
+	<!-- input source -->
 	<inputsourcedef>
 		<name>GOOGLE_JAPANESE_INPUT</name>
 		<inputsourceid_prefix>com.google.inputmethod.Japanese.base</inputsourceid_prefix>
 	</inputsourcedef>
 
+	
+	<!-- change input source -->
 	<vkchangeinputsourcedef>
 		<name>KeyCode::VK_CHANGE_INPUTSOURCE_GOOGLE_JAPANESE_INPUT</name>
 		<inputsourceid_equal>com.google.inputmethod.Japanese.base</inputsourceid_equal>
 	</vkchangeinputsourcedef>
-	
 	<vkchangeinputsourcedef>
 		<name>KeyCode::VK_CHANGE_INPUTSOURCE_US</name>
 		<inputsourceid_equal>com.apple.keylayout.US</inputsourceid_equal>
 	</vkchangeinputsourcedef>
 
 
+	<!-- window name -->
+	<windownamedef>
+		<name>Open</name>
+		<regex>Open</regex>
+	</windownamedef>
 
 
+	<!-- app open -->
 	<vkopenurldef>
 		<name>KeyCode::VK_OPEN_URL_APP_Chrome</name>
 		<url type="file">/Applications/Google Chrome.app</url>
 	</vkopenurldef>
-
 	<vkopenurldef>
 		<name>KeyCode::VK_OPEN_URL_APP_Yorufukurou</name>
 		<url type="file">/Applications/YoruFukurou.app</url>
 	</vkopenurldef>
-	
 	<vkopenurldef>
 		<name>KeyCode::VK_OPEN_URL_APP_Finder</name>
 		<url type="file">/System/Library/CoreServices/Finder.app</url>
 	</vkopenurldef>
-
 	<vkopenurldef>
 		<name>KeyCode::VK_OPEN_URL_APP_iTerm</name>
 		<url type="file">/Applications/iTerm.app</url>
 	</vkopenurldef>
-
 
 
 	<!-- shell commands -->
