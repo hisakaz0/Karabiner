@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Terminal(iTerm2)</name>
+    <item>
+      <name>Swap Command + Space and Control + Space</name>
+      <identifier>private.swap.command.tab.to.control.space</identifier>
+      <only>iTerm2</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, ModifierFlag::COMMAND_L,
+        KeyCode::SPACE, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, ModifierFlag::CONTROL_L,
+        KeyCode::SPACE, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+
+    <item>
+      <name>Swap Opt + Command + 8 and Control + Opt + 8</name>
+      <identifier>private.swap.opt.command.8.and..opt.control.8</identifier>
+      <only>iTerm2</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::KEY_8, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
+        KeyCode::KEY_8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::KEY_8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L,
+        KeyCode::KEY_8, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
+      </autogen>
+    </item>
+
+
+    <item>
+      <name>Swap Command and Control</name>
+      <identifier>private.swap.Command.and.control</identifier>
+      <only>iTerm2</only>
+      <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+    </item>
+
+
+    <item>
+      <name>Full screen only iTerm</name>
+      <identifier>private.full.screen.only.iTerm2</identifier>
+      <only>iTerm2</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::RETURN, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+        KeyCode::RETURN, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+
+  </item>
+</root>

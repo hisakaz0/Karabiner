@@ -2,13 +2,13 @@
 <root>
 	<item>
 		<name>Private</name>
-		<include path='./def.xml'/>
-		<include path='./chrome.xml'/>
-		<include path='./iterm.xml'/>
-		<include path='./hhkb.xml'/>
-		<include path='./global.xml'/>
-		<include path='./finder.xml'/>
-		<include path='./open.xml'/>
-		<include path='./windowSession.xml'/>
+    <include path='./include/def.xml'/>
+    <include path='./include/chrome.xml'/>
+    <include path='./include/iterm.xml'/>
+    <include path='./include/hhkb.xml'/>
+    <include path='./include/global.xml'/>
+    <include path='./include/finder.xml'/>
+    <include path='./include/open.xml'/>
+    <include path='./include/windowSession.xml'/>
 	</item>
 </root>
