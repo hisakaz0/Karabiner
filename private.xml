@@ -7,7 +7,6 @@
     <include path='./include/iterm.xml'/>
     <include path='./include/hhkb.xml'/>
     <include path='./include/global.xml'/>
-    <include path='./include/finder.xml'/>
     <include path='./include/open.xml'/>
     <include path='./include/windowSession.xml'/>
 	</item>

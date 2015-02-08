@@ -1,67 +1,67 @@
 <?xml version="1.0"?>
 <root>
-	<item>
-		<name>Action on Window Name 'Open'</name>
+  <item>
+    <name>window.session</name>
 
-		<item>
-			<name>Back</name>
-			<identifier>private.window.name.open.back</identifier>
-			<windowname_only>Open</windowname_only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::B, KeyCode::BRACKET_LEFT | ModifierFlag::COMMAND_L
-			</autogen>
-		</item>
+    <item>
+      <name>Back</name>
+      <identifier>private.window.session.back</identifier>
+      <uielementrole_only>AXOutline,AXList</uielementrole_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::B, KeyCode::BRACKET_LEFT | ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
 
-		<item>
-			<name>Forward</name>
-			<identifier>private.window.name.open.forward</identifier>
-			<windowname_only>Open</windowname_only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::P, KeyCode::BRACKET_RIGHT | ModifierFlag::COMMAND_L
-			</autogen>
-		</item>
+    <item>
+      <name>Forward</name>
+      <identifier>private.window.session.forward</identifier>
+      <uielementrole_only>AXOutline,AXList</uielementrole_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::P, KeyCode::BRACKET_RIGHT | ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
 
-		<item>
-			<name>Open</name>
-			<identifier>private.window.name.open.open</identifier>
-			<windowname_only>Open</windowname_only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::L, KeyCode::CURSOR_DOWN | ModifierFlag::COMMAND_L
-			</autogen>
-		</item>
+    <item>
+      <name>Open</name>
+      <identifier>private.window.session.open</identifier>
+      <uielementrole_only>AXOutline,AXList</uielementrole_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, KeyCode::CURSOR_DOWN | ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
 
-		<item>
-			<name>Enclosing Folder</name>
-			<identifier>private.window.name.open.enclosing.folder</identifier>
-			<windowname_only>Open</windowname_only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::H, KeyCode::CURSOR_UP | ModifierFlag::COMMAND_L
-			</autogen>
-		</item>
+    <item>
+      <name>Enclosing Folder</name>
+      <identifier>private.window.session.enclosing.folder</identifier>
+      <uielementrole_only>AXOutline,AXList</uielementrole_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::H, KeyCode::CURSOR_UP | ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
 
-		<item>
-			<name>Up Arrow</name>
-			<identifier>private.window.name.open.up.arrow</identifier>
-			<windowname_only>Open</windowname_only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::K, KeyCode::CURSOR_UP
-			</autogen>
-		</item>
+    <item>
+      <name>Up Arrow</name>
+      <identifier>private.window.session.up.arrow</identifier>
+      <uielementrole_only>AXOutline,AXList</uielementrole_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, KeyCode::CURSOR_UP
+      </autogen>
+    </item>
 
-		<item>
-			<name>Down Arrow</name>
-			<identifier>private.window.name.open.down.arrow</identifier>
-			<windowname_only>Open</windowname_only>
-			<autogen>
-				__KeyToKey__
-				KeyCode::J, KeyCode::CURSOR_DOWN
-			</autogen>
-		</item>
+    <item>
+      <name>Down Arrow</name>
+      <identifier>private.window.session.down.arrow</identifier>
+      <uielementrole_only>AXOutline,AXList</uielementrole_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::J, KeyCode::CURSOR_DOWN
+      </autogen>
+    </item>
 
-	</item>
+  </item>
 </root>
