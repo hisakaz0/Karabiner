@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <root>
-	<item>
-		<name>Private</name>
+  <item>
+    <name>Private</name>
     <include path='./include/def.xml'/>
     <include path='./include/chrome.xml'/>
     <include path='./include/iterm.xml'/>
@@ -9,5 +9,5 @@
     <include path='./include/global.xml'/>
     <include path='./include/open.xml'/>
     <include path='./include/windowSession.xml'/>
-	</item>
+  </item>
 </root>

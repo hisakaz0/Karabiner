@@ -6,7 +6,7 @@
     <item>
       <name>Back</name>
       <identifier>private.window.session.back</identifier>
-      <uielementrole_only>AXOutline,AXList</uielementrole_only>
+      <uielementrole_only>AXOutline</uielementrole_only>
       <autogen>
         __KeyToKey__
         KeyCode::B, KeyCode::BRACKET_LEFT | ModifierFlag::COMMAND_L
@@ -26,21 +26,43 @@
     <item>
       <name>Open</name>
       <identifier>private.window.session.open</identifier>
-      <uielementrole_only>AXOutline,AXList</uielementrole_only>
-      <autogen>
-        __KeyToKey__
-        KeyCode::L, KeyCode::CURSOR_DOWN | ModifierFlag::COMMAND_L
-      </autogen>
+      <block>
+        <uielementrole_only>AXOutline</uielementrole_only>
+        <autogen>
+          __KeyToKey__
+          KeyCode::L, KeyCode::CURSOR_DOWN | ModifierFlag::COMMAND_L
+        </autogen>
+      </block>
+      <block>
+        <uielementrole_only>AXList</uielementrole_only>
+        <autogen>
+          __KeyToKey__
+          KeyCode::L, KeyCode::CURSOR_RIGHT
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::SEMICOLON, KeyCode::CURSOR_DOWN | ModifierFlag::COMMAND_L
+        </autogen>
+      </block>
     </item>
 
     <item>
       <name>Enclosing Folder</name>
       <identifier>private.window.session.enclosing.folder</identifier>
-      <uielementrole_only>AXOutline,AXList</uielementrole_only>
-      <autogen>
-        __KeyToKey__
-        KeyCode::H, KeyCode::CURSOR_UP | ModifierFlag::COMMAND_L
-      </autogen>
+      <block>
+        <uielementrole_only>AXOutline</uielementrole_only>
+        <autogen>
+          __KeyToKey__
+          KeyCode::H, KeyCode::CURSOR_UP | ModifierFlag::COMMAND_L
+        </autogen>
+      </block>
+      <block>
+        <uielementrole_only>AXList</uielementrole_only>
+        <autogen>
+          __KeyToKey__
+          KeyCode::H, KeyCode::CURSOR_LEFT
+        </autogen>
+      </block>
     </item>
 
     <item>

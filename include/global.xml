@@ -103,8 +103,15 @@
         KeyCode::ESCAPE,
         KeyCode::SPACE, ModifierFlag::COMMAND_L,
         KeyCode::ESCAPE,
-        KeyCode::RETURN
       </autogen>
+      <!-- <autogen>                                  -->
+      <!--   __KeyToKey__                             -->
+      <!--   KeyCode::ESCAPE,                         -->
+      <!--   KeyCode::ESCAPE,                         -->
+      <!--   KeyCode::SPACE, ModifierFlag::COMMAND_L, -->
+      <!--   KeyCode::ESCAPE,                         -->
+      <!--   KeyCode::RETURN                          -->
+      <!-- </autogen>                                 -->
     </item>
   </item>
 </root>

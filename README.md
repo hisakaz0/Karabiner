@@ -20,3 +20,10 @@ Launch the Karabiner application.
 More karabiner description are in .xml files.
 
 
+### Original XML source path
+
+
+```bash 
+/Applications/Karabiner.app/Contents/Resources
+```
+
