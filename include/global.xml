@@ -96,12 +96,12 @@
     <item>
       <name>Smart Esc</name>
       <identifier>private.smart.esc</identifier>
+      <inputsource_only>GOOGLE_JAPANESE_INPUT</inputsource_only>
       <autogen>
         __KeyToKey__
         KeyCode::ESCAPE,
         KeyCode::ESCAPE,
-        KeyCode::VK_CHANGE_INPUTSOURCE_US,
-        KeyCode::ESCAPE
+        KeyCode::VK_CHANGE_INPUTSOURCE_US
       </autogen>
     </item>
   </item>
