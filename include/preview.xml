@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<root>
+  <item><!-- start: item container -->
+    <name>Preview</name>
+
+    <item>
+      <name>Down</name>
+      <identifier>private.preview.down</identifier>
+      <only>Preview</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::J, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_DOWN
+      </autogen>
+    </item>
+
+    <item>
+      <name>Up</name>
+      <identifier>private.preview.up</identifier>
+      <only>Preview</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_UP
+      </autogen>
+    </item>
+
+    <item>
+      <name>Left</name>
+      <identifier>private.preview.left</identifier>
+      <only>Preview</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::H, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_LEFT
+      </autogen>
+    </item>
+
+    <item>
+      <name>Right</name>
+      <identifier>private.preview.right</identifier>
+      <only>Preview</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_RIGHT
+      </autogen>
+    </item>
+
+    <item>
+      <name>Half Up</name>
+      <identifier>private.preview.half.up</identifier>
+      <only>Preview</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::D, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN,
+        KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN,
+        KeyCode::CURSOR_DOWN, KeyCode::CURSOR_DOWN
+      </autogen>
+    </item>
+
+    <item>
+      <name>Half Down</name>
+      <identifier>private.preview.half.down</identifier>
+      <only>Preview</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::U, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_UP, KeyCode::CURSOR_UP,
+        KeyCode::CURSOR_UP, KeyCode::CURSOR_UP,
+        KeyCode::CURSOR_UP, KeyCode::CURSOR_UP
+      </autogen>
+    </item>
+
+  </item><!-- end: item container -->
+</root>

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <root>
-  <item>
-    <name>iTerm2(Terminal)</name>
+  <item><!-- item container -->
+    <name>X11</name>
     <item>
       <name>Swap Command + Space and Control + Space</name>
-      <identifier>private.iterm.swap.command.tab.to.control.space</identifier>
-      <only>iTerm2</only>
+      <identifier>private.x11.swap.command.tab.to.control.space</identifier>
+      <only>X11</only>
       <autogen>
         __KeyToKey__
         KeyCode::SPACE, ModifierFlag::COMMAND_L,
@@ -20,8 +20,8 @@
 
     <item>
       <name>Swap Opt + Command + 8 and Control + Opt + 8</name>
-      <identifier>private.iterm.swap.opt.command.8.and..opt.control.8</identifier>
-      <only>iTerm2</only>
+      <identifier>private.x11.swap.opt.command.8.and..opt.control.8</identifier>
+      <only>X11</only>
       <autogen>
         __KeyToKey__
         KeyCode::KEY_8, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
@@ -34,31 +34,44 @@
       </autogen>
     </item>
 
-
     <item>
       <name>Swap Command and Control</name>
-      <identifier>private.iterm.swap.Command.and.control</identifier>
-      <only>iTerm2</only>
+      <identifier>private.x11.swap.Command.and.control</identifier>
+      <only>X11</only>
       <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
       <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
     </item>
 
-
     <item>
-      <name>Full screen only iTerm</name>
-      <identifier>private.iterm.full.screen.only.iTerm2</identifier>
-      <only>iTerm2</only>
+      <name>Switch Window</name>
+      <identifier>private.x11.switch.windows</identifier>
+      <only>X11</only>
       <autogen>
         __KeyToKey__
-        KeyCode::RETURN, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
-        KeyCode::RETURN, ModifierFlag::COMMAND_L
+        KeyCode::SEMICOLON, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
       </autogen>
     </item>
 
     <item>
       <name>Use normal fuction keys</name>
-      <identifier>private.iterm.use.normal.function.keys</identifier>
-      <only>iTerm2</only>
+      <identifier>private.x11.use.normal.function.keys</identifier>
+      <only>X11</only>
       <autogen>__KeyToKey__ ConsumerKeyCode::BRIGHTNESS_DOWN,    KeyCode::F1</autogen>
       <autogen>__KeyToKey__ ConsumerKeyCode::BRIGHTNESS_UP,      KeyCode::F2</autogen>
       <autogen>__KeyToKey__ KeyCode::MISSION_CONTROL,            KeyCode::F3</autogen>
@@ -84,5 +97,6 @@
       <autogen>__KeyToKey__ KeyCode::F11, ConsumerKeyCode::VOLUME_DOWN</autogen>
       <autogen>__KeyToKey__ KeyCode::F12, ConsumerKeyCode::VOLUME_UP</autogen>
     </item>
-  </item>
+  </item><!-- item container -->
 </root>
+

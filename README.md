@@ -5,7 +5,7 @@ Karabiner
 
 Launch a terminal application.
 
-1. `mv ~/Library/Application Support/Karabiner'
+1. `mv ~/Library/Application Support/Karabiner`
 2. `git clone https://github.com/pinkienort/Karabiner.git .`
 
 Launch the Karabiner application.
@@ -23,7 +23,7 @@ More karabiner description are in .xml files.
 ### Original XML source path
 
 
-```bash 
+```sh
 /Applications/Karabiner.app/Contents/Resources
 ```
 

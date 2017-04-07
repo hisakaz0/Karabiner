@@ -15,8 +15,12 @@
     <equal>com.googlecode.iterm2</equal>
   </appdef>
   <appdef>
-    <appname>Finder</appname>
-    <equal>com.apple.finder</equal>
+    <appname>Preview</appname>
+    <equal>com.apple.Preview</equal>
+  </appdef>
+  <appdef>
+    <appname>NetworkAssistant</appname>
+    <equal>com.apple.CaptiveNetworkAssistant</equal>
   </appdef>
 
 
@@ -67,13 +71,23 @@
     <name>KeyCode::VK_OPEN_URL_APP_iTerm</name>
     <url type="file">/Applications/iTerm.app</url>
   </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Preview</name>
+    <url type="file">/Applications/Preview.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_XQuartz</name>
+    <url type="file">/Applications/Utilities/XQuartz.app</url>
+  </vkopenurldef>
+
+
 
 
   <!-- shell commands -->
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_screencapture</name>
     <url type="shell">
-      <![CDATA[ /Users/hisakazu/bin/sh/screencapture.sh ]]>
+      <![CDATA[ /Users/hisakazu/.bin/sh/screencapture.sh ]]>
     </url>
   </vkopenurldef>
 

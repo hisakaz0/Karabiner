@@ -58,5 +58,24 @@
       </autogen>
     </item>
 
+    <item>
+      <name>Open Preview.app</name>
+      <identifier>private.open.preview.app</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::P, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+        KeyCode::VK_OPEN_URL_APP_Preview
+      </autogen>
+    </item>
+
+    <item>
+      <name>Open XQuartz</name>
+      <identifier>private.open.xquartz.app</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::X, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+        KeyCode::VK_OPEN_URL_APP_XQuartz
+      </autogen>
+    </item>
   </item>
 </root>

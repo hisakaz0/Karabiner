@@ -73,8 +73,18 @@
       <identifier>private.switch.windows</identifier>
       <autogen>
         __KeyToKey__
+        KeyCode::SEMICOLON, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
         KeyCode::SEMICOLON, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
         KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L
       </autogen>
       <autogen>
         __KeyToKey__

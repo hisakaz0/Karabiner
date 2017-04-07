@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Keybind for Network Assistant</name>
+    <item>
+      <name>Close the window</name>
+      <identifier>private.network.assistant.close.the.window</identifier>
+      <only>NetworkAssitant</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, ModifierFlag::COMMAND_L,
+        KeyCode::SPACE, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, ModifierFlag::CONTROL_L,
+        KeyCode::SPACE, ModifierFlag::COMMAND_L
+      </autogen>
+    </item>
+  </item>
+</root>

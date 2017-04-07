@@ -4,7 +4,8 @@
     <name>Chrome</name>
 
     <item>
-      <name>Web Search</name>
+      <name>Command + K to Comand + Option + F</name>
+      <name>Web site searching shortcut with windows os keybind(in link bar with ?)</name>
       <identifier>private.chrome.web.search</identifier>
       <only>Chrome</only>
       <autogen>
@@ -16,6 +17,7 @@
 
     <item>
       <name>History</name>
+      <name>Opening history window with windows os keybind</name>
       <identifier>private.chrome.history</identifier>
       <only>Chrome</only>
       <autogen>
@@ -27,6 +29,7 @@
 
     <item>
       <name>Downloads</name>
+      <name>Opening donwload page with windows os keybind</name>
       <identifier>private.chrome.downloads</identifier>
       <only>Chrome</only>
       <autogen>
@@ -38,6 +41,7 @@
 
     <item>
       <name>Open Link</name>
+      <name>Omni page searching shortcut with windows os keybind(in link bar)</name>
       <identifier>private.chrome.open.link</identifier>
       <only>Chrome</only>
       <autogen>
